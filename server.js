@@ -1,10 +1,11 @@
 const express = require('express');
-const bodyParser = require('body-parser');
+// const bodyParser = require('body-parser');
 const CORS = require('cors');
 
 const app = express();
 
-app.use(bodyParser.json());
+// app.use(bodyParser.json());
+app.use(express.json());
 app.use(CORS());
 
 const movies = [
